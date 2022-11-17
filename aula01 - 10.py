@@ -3,7 +3,15 @@
 # perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante perderá. Exiba o 
 # total de dias.
 
-quantidadeCigarros = int(input("Quantos cigarros são fumados por dia? "))
+cigarrosPorDia = int(input("Quantos cigarros sao fumados por dia? "))
 quantidadeAnos = int(input("Fumou por quantos anos? "))
 
-anosEmDias = 
+totalDeCigarros = quantidadeAnos * 365 * cigarrosPorDia
+tempoReduzidoEmMinutos = totalDeCigarros * 10
+tempoReduzidoEmDias = tempoReduzidoEmMinutos / 1440
+
+print(f"total De Cigarros, {totalDeCigarros}")
+print(f"tempoReduzidoEmDias, {tempoReduzidoEmDias}")
+print(f"tempoReduzidoEmMinutos, {tempoReduzidoEmMinutos}")
+
+print (f"A quantidade de dias perdidos foi de {round(tempoReduzidoEmDias)} dias!")
